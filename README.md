@@ -3,8 +3,6 @@
 ## Overview
 This is a responsive and modern **To-Do List Application** built with **Node.js**, **Express**, **EJS**, and **MariaDB**. The app provides a user-friendly interface for managing tasks, including features to add, view, complete, and delete tasks. Tasks can include both a title and a detailed description for clarity.
 
----
-
 ## Features
 
 ### Core Features
@@ -15,7 +13,7 @@ This is a responsive and modern **To-Do List Application** built with **Node.js*
 - **Responsive Design**: The app is optimized for both desktop and mobile devices with a sleek dark mode.
 
 ### Database Setup
-Paste the following into MySQL Workbench:
+To properly utilize this application, paste the following into MySQL Workbench:
 ```sql
 CREATE DATABASE IF NOT EXISTS todolist;
 USE todolist;
