@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.add-task-form {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+}
+
+.add-task-form input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.add-task-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-task-form button:hover {
+    background-color: #575757;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.description-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    resize: none;
+    height: 40px;
+}
+
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task-title {
+    flex: 1;
+    color: #e0e0e0;
+}
+
+.view-details-link {
+    color: #4fbfff;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding-right: 10px;
+}
+
+.view-details-link:hover {
+    color: #86d3ff;
+}
+
+.task-action-form {
+    margin: 0;
+}
+
+.task-complete-button,
+.task-delete-button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-complete-button:hover {
+    background-color: #4caf50;
+}
+
+.task-delete-button:hover {
+    background-color: #f44336;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .add-task-form {
+        flex-direction: column;
+    }
+
+    .add-task-form button {
+        width: 100%;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-complete-button,
+    .task-delete-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .add-task-form input {
+        padding: 15px;
+    }
+
+    .task-item {
+        padding: 20px;
+    }
+}
