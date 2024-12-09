@@ -14,9 +14,18 @@ This is a responsive and modern **To-Do List Application** built with **Node.js*
 - **Delete Tasks**: Tasks can be removed from the list.
 - **Responsive Design**: The app is optimized for both desktop and mobile devices with a sleek dark mode.
 
-### Database
-Powered by **MariaDB**, the `tasks` table includes:
-- `id`: Unique identifier for each task.
-- `title`: Short title for the task.
-- `description`: Detailed explanation of the task.
-- `completed`: Boolean status indicating whether the task is complete.
+### Database Setup
+Paste the following into MySQL Workbench:
+```sql
+CREATE DATABASE IF NOT EXISTS todolist;
+USE todolist;
+
+DROP TABLE tasks;
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    completed BOOLEAN DEFAULT FALSE
+);
+
+SELECT * FROM tasks;
